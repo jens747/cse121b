@@ -1,3 +1,6 @@
+currentWeekday = currentDateInfo.getDay();
+// currentWeekday = 4;
+
 const bestOfTheDay = {
   thought: [
     {
@@ -104,7 +107,7 @@ async function iChooseYou(url) {
 }
 
 function selectThought(data) {
-  const thought = data.thought[0];
+  const thought = data.thought[currentWeekday];
   const addThought = `<h2>The thought of the day is by:\n</h2>
   <p id="author">${thought.author}\n</p>
   <p class="selectP">"${thought.content}"</p>`;
@@ -134,7 +137,7 @@ function selectLetter(data) {
 }
 
 function selectSong(data) {
-  const info = data.song[currentDateInfo.getDay()];
+  const info = data.song[currentWeekday];
   const addSong = `<h2>Today's song is:\n</h2>
     <p id="song">${info.title}\n</p>
     <p class="selectP">Hymn Number: ${info.page}\n</p>

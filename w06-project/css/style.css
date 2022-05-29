@@ -41,10 +41,7 @@ div h2 {
   display: block;
 }
 
-#song {
-  font-size: 4rem;
-}
-
+#song,
 #author {
   font-size: 2.4rem;
 }

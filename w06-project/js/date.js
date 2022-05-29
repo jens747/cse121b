@@ -63,6 +63,8 @@ const formTime = (currentDateInfo) => {
 
 // Variables for day, month, date, year, and time
 const currentDay = daysOfWeek[currentDateInfo.getDay()];
+// const currentDay = daysOfWeek[4];
+
 const currentMonth = monthsOfYear[currentDateInfo.getMonth()];
 const currentDayOf = currentDateInfo.getDate();
 const currentYear = currentDateInfo.getFullYear();
