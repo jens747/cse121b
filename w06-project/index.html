@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CSE-121B: Week 06 Final Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Daily Inspiration</h1>
+      <p>Select from new inspirations every day.</p>
+    </header>
+    <main>
+      <section>
+        <h2>Happy <span id="weekday"></span>!</h2>
+        <h3>
+          Today is...
+          <span id="date"></span>
+        </h3>
+      </section>
+      <hr />
+      <section>
+        <h2>Select your Daily Inspiration</h2>
+        <p class="custom-select">
+          <select id="selection">
+            <option value="default">select an option</option>
+            <option value="thought">Thought of the Day</option>
+            <option value="number">Number of the Day</option>
+            <option value="letter">Letter of the Day</option>
+            <option value="song">Song of the Day</option>
+            <option value="pokemon">Pokemon of the Day</option>
+          </select>
+        </p>
+        <div id="inspiration"></div>
+      </section>
+    </main>
+    <footer>
+      &copy;
+      <span id="copyrightYear"></span>
+      | Joel Jensen | BYU-Idaho | CSE-121B
+      <div id="lastModified">Last Modified:</div>
+    </footer>
+    <script src="js/date.js"></script>
+    <script src="js/daily.js"></script>
+  </body>
+</html>
